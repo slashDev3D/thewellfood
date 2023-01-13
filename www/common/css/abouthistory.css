@@ -1,0 +1,10 @@
+.public--sub-wrap{text-align: center;}
+.public--text1{font-weight: 500;}
+.public--text2{margin-top: 1em;font-weight: 500;line-height: 1.5;}
+p.year{margin-top: 4em;}
+
+.public--sub-wrap .scroll-detect{opacity: 0;transform: translate(0,40px);}
+.public--sub-wrap .scroll-detect.on-view{opacity: 1;transform: translate(0,0px);transition-duration: 0.5s;}
+
+.init, .scroll-detect{transform: translate(0,40px); opacity: 0;transition-property: opacity transform;}
+.init.on-view, .scroll-detect.on-view{transform: translate(0,0);opacity: 1;transition-duration: 0.5s;}
